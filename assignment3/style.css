@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  /* width: 100%; */
+  position: relative;
+  height: 100vh;
+  background-image: url(./assets/hero-bg.png);
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.nav-logo {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.content {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.right {
+  position: absolute;
+  right: 290px;
+}
+
+.left {
+  position: absolute;
+  left: 250px;
+}
+
+.right p {
+  font-size: 1.2rem;
+}
+
+.left p {
+  font-size: 1.2rem;
+  /* margin-left: 10px; */
+}
+
+.content .bold-content {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+}
+
+.img img {
+  width: 320px;
+  height: auto;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vision {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 200px;
+  background: transparent;
+  padding: 60px 0;
+  z-index: 10;
+  overflow: hidden;
+  background-color: #2d2938;
+}
+
+
+
+.vision > * {
+  position: relative;
+  z-index: 1;
+}
+
+.vision h2 {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 29px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  /* margin-bottom: 20px; */
+}
+
+.vision-line {
+  width: 910px;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 430px;
+  height: 1px;
+  background: rgba(232, 204, 170, 0.85);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--line-gold);
+  border-radius: 50%;
+}
+
+.diamond {
+  width: 13px;
+  height: 13px;
+  background: var(--line-gold);
+  transform: rotate(45deg);
+  margin: 0 3px;
+  border: 2px solid var(--dark-section);
+}
+
+.vision-content {
+  width: 910px;
+  margin: 0 auto;
+  display: flex;
+  gap: 125px;
+  gap: 125px;
+}
+
+.vision-content p {
+  width: 50%;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #ddd5d8;
+}
+
+button {
+  position: absolute;
+  z-index: 10;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  background-color: burlywood;
+  color: #2d2938;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
