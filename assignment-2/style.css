@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    position:relative;
+}
+
+/* LEFT */
+
+.left{
+    width:50%;
+    background:#f6f6f6;
+    padding:40px 50px;
+}
+
+.header-left{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-left h1{
+    color:#082e2e;
+    font-size:40px;
+    font-weight:700;
+}
+
+.search input{
+    width:300px;
+    padding:15px 20px;
+    border:none;
+    border-radius:30px;
+    background:#ececec;
+    outline:none;
+}
+
+.left-content{
+    display:flex;
+    margin-top:100px;
+}
+
+.vertical-text{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:70px;
+    color:#0c3131;
+    font-family:Georgia, serif;
+    margin-right:80px;
+}
+
+.classification{
+    width:300px;
+}
+
+.item{
+    padding:18px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.item h3{
+    margin-bottom:8px;
+    color:#222;
+}
+
+.item p{
+    color:#555;
+    font-size:18px;
+}
+
+/* CENTER IMAGE */
+
+.center{
+    position:absolute;
+    left:50%;
+    top:55%;
+    transform:translate(-50%, -50%);
+    z-index:100;
+}
+
+.center img{
+    width:550px;
+    object-fit:contain;
+}
+
+/* RIGHT */
+
+.right{
+    width:50%;
+    background:#c93a2d;
+    color:#e0c298;
+    padding:40px 70px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+
+.details{
+    margin-top:120px;
+    margin-left:280px;
+}
+
+.details h2{
+    font-size:70px;
+    line-height:1;
+    font-family:Georgia, serif;
+    font-weight:400;
+    margin-bottom:40px;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.info-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:18px;
+}
+
+.info-item i{
+    font-size:22px;
+}
+
+.price{
+    margin-top:50px;
+    font-size:55px;
+    font-weight:700;
+}
+
+.options{
+    margin-top:30px;
+}
+
+.options p{
+    margin-bottom:15px;
+    font-size:17px;
+    color:white;
+}
+
+button{
+    margin-top:25px;
+    width:220px;
+    height:60px;
+    border:none;
+    border-radius:8px;
+    background:#e0c298;
+    color:#333;
+    font-size:18px;
+    cursor:pointer;
+}
